@@ -3,17 +3,17 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import StarIcon from '../../Icons/StarIcon';
 
-type IconButtonProps = {
-  screen: "small" | "medium";
-}
-
-export default function IconButtonStar({ screen }: IconButtonProps) {
+export default function IconButtonStar() {
   return (
     <IconButton>
       <StarIcon 
-        fillColor="text-primary-50" 
-        size={screen === "small" && "16" || screen === "medium" && "18"} 
+        fillColor="text-primary-50"
+        width="w-[1rem]"
+        height="h-[1rem]"
+        smWidth="sm:w-[1.125rem]"
+        smHeight="sm:h-[1.125rem]"
       />
     </IconButton>
   )
 }
+

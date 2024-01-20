@@ -1,6 +1,6 @@
 import Body from "./Body";
 
-/**The Body component is used for render body text. */
+/**The **Body** component is used for render body text. */
 export default {
   title: 'atoms/Typography/Body',
   component: Body,
@@ -11,11 +11,11 @@ export default {
       control: 'text',
     },
     weight: {
-      description: 'Specifies the font-weight of the text. It must be one of the following string options:',
+      description: 'Specifies the font-weight of the text in a string format. Uses TailwindCSS classes.',
       control: 'text',
     },
     color: {
-      description: 'Specifies the text-color of the text. Uses TailwindCSS classes. It must be a string.',
+      description: 'Specifies the color of the text in a string format. Uses TailwindCSS classes.',
       control: 'text',
     }
   }

@@ -1,6 +1,6 @@
 import Heading1 from "./Heading1";
 
-/**The Heading1 component is used for render level 1 headings. */
+/**The **Heading1** component is used for render level 1 headings. */
 export default {
   title: 'atoms/Typography/Heading1',
   component: Heading1,
@@ -11,11 +11,11 @@ export default {
       control: 'text',
     },
     weight: {
-      description: 'Specifies the font-weight of the heading. It must be one of the following string options:',
+      description: 'Specifies the font-weight of the heading in a string format. Uses TailwindCSS classes.',
       control: 'text',
     },
     color: {
-      description: 'Specifies the text-color of the heading. Uses TailwindCSS classes. It must be a string.',
+      description: 'Specifies the color of the heading in a string format. Uses TailwindCSS classes.',
       control: 'text',
     }
   }

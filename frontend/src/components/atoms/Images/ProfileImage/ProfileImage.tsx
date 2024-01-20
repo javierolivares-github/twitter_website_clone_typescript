@@ -3,13 +3,15 @@ import '../../../../index.css';
 
 type ProfileImageProps = {
   imageUrl: string;
-  width: "w-10" | "w-11" | "w-12";
-  height: "h-10" | "h-11" | "h-12";
+  width: string;
+  height: string;
+  smWidth?: string;
+  smHeight?: string;
 }
 
-export default function ProfileImage({ imageUrl, width, height }: ProfileImageProps) {
+export default function ProfileImage({ imageUrl, width, height, smWidth, smHeight }: ProfileImageProps) {
   return (
-    <div className={`${width} ${height} rounded-full overflow-hidden`}>
+    <div className={`${width} ${height} ${smWidth} ${smHeight} rounded-full overflow-hidden`}>
       <img
         data-testid="profile-img-container"
         src={imageUrl} 

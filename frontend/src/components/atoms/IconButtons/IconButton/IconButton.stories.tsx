@@ -4,7 +4,7 @@ import CircleIcon from "../../Icons/CircleIcon";
 
 /**The **IconButton** component renders an icon button.  */
 export default {
-  title: 'atoms/iconbuttons/iconbutton',
+  title: 'Atoms/IconButtons/IconButton',
   component: IconButton,
   tags: ['autodocs'],
   argTypes: {

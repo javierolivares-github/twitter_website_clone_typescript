@@ -1,6 +1,6 @@
 import Caption1 from "./Caption1";
 
-/**The Caption1 component is used for render caption text. */
+/**The **Caption1** component is used for render caption text. */
 export default {
   title: 'atoms/Typography/Caption1',
   component: Caption1,
@@ -11,11 +11,11 @@ export default {
       control: 'text',
     },
     weight: {
-      description: 'Specifies the font-weight of the caption. It must be one of the following string options:',
+      description: 'Specifies the font-weight of the caption in a string format. Uses TailwindCSS classes.',
       control: 'text',
     },
     color: {
-      description: 'Specifies the text-color of the caption. Uses TailwindCSS classes. It must be a string.',
+      description: 'Specifies the color of the caption in a string format. Uses TailwindCSS classes.',
       control: 'text',
     }
   }

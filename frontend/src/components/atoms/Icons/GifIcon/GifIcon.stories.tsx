@@ -1,6 +1,6 @@
 import GifIcon from "./GifIcon";
 
-/**The GifIcon component renders an gif icon. */
+/**The **GifIcon** component renders a gif icon. */
 export default {
   title: 'atoms/Icons/GifIcon',
   component: GifIcon,
@@ -10,8 +10,20 @@ export default {
       description: 'Specifies the fill color of the icon in a string format. Uses TailwindCSS classes.',
       control: 'text',
     },
-    size: {
-      description: 'Specifies the width and height of the icon in a string format.',
+    width: {
+      description: 'Specifies the width of the icon in a string format. Uses TailwindCSS classes.',
+      control: 'text',
+    },
+    height: {
+      description: 'Specifies the height of the icon in a string format. Uses TailwindCSS classes.',
+      control: 'text',
+    },
+    smWidth: {
+      description: 'Specifies the width of the icon in a string format in a medium size screen. Uses TailwindCSS classes.',
+      control: 'text',
+    },
+    smHeight: {
+      description: 'Specifies the height of the icon in a string format in a medium size screen. Uses TailwindCSS classes.',
       control: 'text',
     },
   }
@@ -21,7 +33,8 @@ export default {
 export const Default = {
   args: {
     fillColor: "text-black-900",
-    size: "24",
+    width: "w-[1.125rem]",
+    height: "h-[1.125rem]"
   },
 };
 

@@ -11,11 +11,19 @@ export default {
       control: 'text',
     },
     width: {
-      description: 'Specifies the width of the image in a string format. Uses TailwindCSS classes. It must one of the following classes:',
+      description: 'Specifies the width of the image in a string format. Uses TailwindCSS classes.',
       control: 'text',
     },
     height: {
-      description: 'Specifies the height of the image in a string format. Uses TailwindCSS classes. It must one of the following classes:',
+      description: 'Specifies the height of the image in a string format. Uses TailwindCSS classes.',
+      control: 'text',
+    },
+    smWidth: {
+      description: 'Specifies the width of the image in a string format for a medium size screen. Uses TailwindCSS classes. It is optional.',
+      control: 'text',
+    },
+    smHeight: {
+      description: 'Specifies the height of the image in a string format for a medium size screen. Uses TailwindCSS classes. It is optional.',
       control: 'text',
     },
   }

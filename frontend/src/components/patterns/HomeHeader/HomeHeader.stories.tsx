@@ -2,7 +2,7 @@ import HomeHeader from "./HomeHeader";
 
 /**The **HomeHeader** component renders the header of Home page. */
 export default {
-  title: 'Patterns/HomeHeader',
+  title: 'Patterns/HomeHeader/HomeHeader',
   component: HomeHeader,
   tags: ['autodocs'],
 }

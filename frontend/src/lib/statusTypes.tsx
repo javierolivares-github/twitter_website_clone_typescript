@@ -4,4 +4,5 @@ export const tweetStatusTypes = {
   followed: "followed",
   promoted: "promoted",
   pinned: "pinned",
+  none: "none",
 }

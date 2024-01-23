@@ -12,7 +12,7 @@ import IconButtonEvents from '../../atoms/IconButtons/IconButtonEvents';
 import IconButtonLocation from '../../atoms/IconButtons/IconButtonLocation';
 import TweetButton from '../../atoms/Buttons/TweetButton';
 
-export default function HomeHeader() {
+const HomeHeader = () => {
   return (
     <div
       data-testid="home-header-container"
@@ -44,3 +44,5 @@ export default function HomeHeader() {
     </div>
   )
 }
+
+export default HomeHeader;

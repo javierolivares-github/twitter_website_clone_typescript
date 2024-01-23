@@ -3,7 +3,7 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import EmojiIcon from '../../Icons/EmojiIcon';
 
-export default function IconButtonEmoji() {
+const IconButtonEmoji = () => {
   return (
     <IconButton>
       <EmojiIcon
@@ -16,3 +16,5 @@ export default function IconButtonEmoji() {
     </IconButton>
   )
 }
+
+export default IconButtonEmoji;

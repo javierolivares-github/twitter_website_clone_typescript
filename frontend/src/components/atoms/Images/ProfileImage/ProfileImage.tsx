@@ -1,15 +1,8 @@
 import React from 'react';
 import '../../../../index.css';
+import { ImageProps } from '../../../../lib/types';
 
-type ProfileImageProps = {
-  imageUrl: string;
-  width: string;
-  height: string;
-  smWidth?: string;
-  smHeight?: string;
-}
-
-export default function ProfileImage({ imageUrl, width, height, smWidth, smHeight }: ProfileImageProps) {
+const ProfileImage = ({ imageUrl, width, height, smWidth, smHeight }: ImageProps) => {
   return (
     <div className={`${width} ${height} ${smWidth} ${smHeight} rounded-full overflow-hidden`}>
       <img
@@ -21,4 +14,6 @@ export default function ProfileImage({ imageUrl, width, height, smWidth, smHeigh
     </div>
   )
 }
+
+export default ProfileImage;
 

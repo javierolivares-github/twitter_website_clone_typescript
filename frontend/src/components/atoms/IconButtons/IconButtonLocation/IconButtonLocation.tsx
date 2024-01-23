@@ -3,7 +3,7 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import LocationIcon from '../../Icons/LocationIcon';
 
-export default function IconButtonLocation() {
+const IconButtonLocation = () => {
   return (
     <IconButton>
       <LocationIcon 
@@ -16,5 +16,7 @@ export default function IconButtonLocation() {
     </IconButton>
   )
 }
+
+export default IconButtonLocation;
 
 

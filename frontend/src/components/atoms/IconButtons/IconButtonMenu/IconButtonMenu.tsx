@@ -3,7 +3,7 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import DotsIcon from '../../Icons/DotsIcon';
 
-export default function IconButtonMenu() {
+const IconButtonMenu = () => {
   return (
     <IconButton>
       <DotsIcon 
@@ -16,3 +16,5 @@ export default function IconButtonMenu() {
     </IconButton>
   )
 }
+
+export default IconButtonMenu;

@@ -3,7 +3,7 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import StarIcon from '../../Icons/StarIcon';
 
-export default function IconButtonStar() {
+const IconButtonStar = () => {
   return (
     <IconButton>
       <StarIcon 
@@ -16,4 +16,6 @@ export default function IconButtonStar() {
     </IconButton>
   )
 }
+
+export default IconButtonStar;
 

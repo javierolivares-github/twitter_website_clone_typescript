@@ -10,6 +10,10 @@ export default {
       description: 'Determines the status of the component in a string format.',
       control: 'text',
     },
+    imageUrl: {
+      description: 'Specifies the URL of the profile image in a string format.',
+      control: 'text',
+    },
   }
 }
 
@@ -17,6 +21,7 @@ export default {
 export const Liked = {
   args: {
     status: "liked",
+    imageUrl: "/images/profile1.png"
   }
 }
 
@@ -24,6 +29,7 @@ export const Liked = {
 export const Retweeted = {
   args: {
     status: "retweeted",
+    imageUrl: "/images/profile1.png"
   }
 }
 
@@ -31,6 +37,7 @@ export const Retweeted = {
 export const Followed = {
   args: {
     status: "followed",
+    imageUrl: "/images/profile1.png"
   }
 }
 
@@ -38,6 +45,7 @@ export const Followed = {
 export const Promoted = {
   args: {
     status: "promoted",
+    imageUrl: "/images/profile1.png"
   }
 }
 
@@ -45,6 +53,7 @@ export const Promoted = {
 export const Pinned = {
   args: {
     status: "pinned",
+    imageUrl: "/images/profile1.png"
   }
 }
 
@@ -52,5 +61,6 @@ export const Pinned = {
 export const None = {
   args: {
     status: "none",
+    imageUrl: "/images/profile1.png"
   }
 }

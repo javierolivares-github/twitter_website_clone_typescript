@@ -1,7 +1,12 @@
 import React from 'react';
 import '/src/index.css';
 
-export default function TweetButton({ size, children }: TweetButtonProps) {
+type TweetButtonProps = {
+  size: "small" | "medium";
+  children: string;
+}
+
+const TweetButton = ({ size, children }: TweetButtonProps) => {
   return (
     <button
       data-testid="tweet-button-container"
@@ -12,7 +17,5 @@ export default function TweetButton({ size, children }: TweetButtonProps) {
   )
 }
 
-type TweetButtonProps = {
-  size: "small" | "medium";
-  children: string;
-}
+export default TweetButton;
+

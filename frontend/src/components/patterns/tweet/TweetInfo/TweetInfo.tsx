@@ -11,13 +11,14 @@ import PinIcon from '../../../atoms/Icons/PinIcon';
 
 type TweetInfoProps = {
   status: "liked" | "retweeted" | "followed" | "promoted" | "pinned" | "none";
+  imageUrl: string;
 }
 
-export default function TweetInfo({ status }: TweetInfoProps) {
+const TweetInfo = ({ status, imageUrl }: TweetInfoProps) => {
   if (status === tweetStatusTypes.liked) {
     return (
       <div className={`flex items-center gap-4`}>
-        <ProfileImage imageUrl='/images/profile1.png' width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
+        <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <LikeIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
           <Caption2 weight='font-bold' color='text-gray-40'>Liked</Caption2>
@@ -29,7 +30,7 @@ export default function TweetInfo({ status }: TweetInfoProps) {
   if (status === tweetStatusTypes.retweeted) {
     return (
       <div className={`flex items-center gap-4`}>
-        <ProfileImage imageUrl='/images/profile1.png' width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
+        <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <RetweetIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
           <Caption2 weight='font-bold' color='text-gray-40'>Retweeted</Caption2>
@@ -41,7 +42,7 @@ export default function TweetInfo({ status }: TweetInfoProps) {
   if (status === tweetStatusTypes.followed) {
     return (
       <div className={`flex items-center gap-4`}>
-        <ProfileImage imageUrl='/images/profile1.png' width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
+        <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <ProfileIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
           <Caption2 weight='font-bold' color='text-gray-40'>Has followed</Caption2>
@@ -53,7 +54,7 @@ export default function TweetInfo({ status }: TweetInfoProps) {
   if (status === tweetStatusTypes.promoted) {
     return (
       <div className={`flex items-center gap-4`}>
-        <ProfileImage imageUrl='/images/profile1.png' width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
+        <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <AdsIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
           <Caption2 weight='font-bold' color='text-gray-40'>Promoted</Caption2>
@@ -65,7 +66,7 @@ export default function TweetInfo({ status }: TweetInfoProps) {
   if (status === tweetStatusTypes.pinned) {
     return (
       <div className={`flex items-center gap-4`}>
-        <ProfileImage imageUrl='/images/profile1.png' width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
+        <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <PinIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
           <Caption2 weight='font-bold' color='text-gray-40'>Pinned</Caption2>
@@ -76,9 +77,11 @@ export default function TweetInfo({ status }: TweetInfoProps) {
 
   return (
     <div>
-      <ProfileImage imageUrl='/images/profile1.png' width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
+      <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
     </div>
   )
 }
+
+export default TweetInfo;
 
 

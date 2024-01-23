@@ -3,7 +3,7 @@ import '../../../../index.css';
 import { IconProps } from '../../../../lib/types';
 
 
-export default function StarIcon({ fillColor, width, height, smWidth, smHeight }: IconProps) {
+const StarIcon = ({ fillColor, width, height, smWidth, smHeight }: IconProps) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" 
     className={`${width} ${height} ${smWidth} ${smHeight}`}>
@@ -11,3 +11,5 @@ export default function StarIcon({ fillColor, width, height, smWidth, smHeight }
     </svg>
   )
 }
+
+export default StarIcon;

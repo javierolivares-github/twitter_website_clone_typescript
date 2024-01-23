@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../../index.css';
 
-export default function HomeHeaderInput() {
+const HomeHeaderInput = () => {
   return (
     <input 
       type="text" 
@@ -12,3 +12,5 @@ export default function HomeHeaderInput() {
     />
   )
 }
+
+export default HomeHeaderInput;

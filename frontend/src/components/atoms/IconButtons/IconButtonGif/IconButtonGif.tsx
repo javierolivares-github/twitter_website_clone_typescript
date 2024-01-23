@@ -3,7 +3,7 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import GifIcon from '../../Icons/GifIcon';
 
-export default function IconButtonGif() {
+const IconButtonGif = () => {
   return (
     <IconButton>
       <GifIcon 
@@ -16,3 +16,5 @@ export default function IconButtonGif() {
     </IconButton>
   )
 }
+
+export default IconButtonGif;

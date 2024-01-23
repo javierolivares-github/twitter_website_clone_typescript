@@ -4,7 +4,7 @@ type IconButtonProps = {
   children: React.JSX.Element;
 }
 
-export default function IconButton({ children }: IconButtonProps) {
+const IconButton = ({ children }: IconButtonProps) => {
   return (
     <button
       data-testid="icon-button-container"
@@ -14,3 +14,5 @@ export default function IconButton({ children }: IconButtonProps) {
     </button>
   )
 }
+
+export default IconButton;

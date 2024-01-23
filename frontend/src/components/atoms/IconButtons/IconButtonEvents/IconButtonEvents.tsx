@@ -3,7 +3,7 @@ import '/src/index.css';
 import IconButton from '../IconButton';
 import EventsIcon from '../../Icons/EventsIcon';
 
-export default function IconButtonEvents() {
+const IconButtonEvents = () => {
   return (
     <IconButton>
       <EventsIcon 
@@ -16,3 +16,5 @@ export default function IconButtonEvents() {
     </IconButton>
   )
 }
+
+export default IconButtonEvents;

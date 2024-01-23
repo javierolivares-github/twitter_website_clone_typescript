@@ -12,7 +12,7 @@ type TweetUsernameProps = {
   timestamp: string;
 }
 
-export default function TweetUsername({ verified, username, account, timestamp }: TweetUsernameProps) {
+const TweetUsername = ({ verified, username, account, timestamp }: TweetUsernameProps) => {
   return (
     <div className={`sm:max-w-[38rem] flex justify-between items-center`}>
       <div className={`flex items-center gap-2`}>
@@ -25,3 +25,5 @@ export default function TweetUsername({ verified, username, account, timestamp }
     </div>
   )
 }
+
+export default TweetUsername;

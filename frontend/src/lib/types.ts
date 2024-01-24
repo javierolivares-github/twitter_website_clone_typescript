@@ -1,5 +1,5 @@
 export type IconProps = {
-  fillColor: "text-primary-50" | "text-secondary-40" | "text-black-900" | "text-gray-40";
+  fillColor: "text-primary-50" | "text-secondary-40" | "text-black-900" | "text-gray-40" | "text-secondary-15";
   width: string;
   height:string;
   smWidth?: string;

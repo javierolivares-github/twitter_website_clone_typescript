@@ -9,7 +9,8 @@ type NavbarTextProps = {
 
 const NavbarTextItem = ({ children, color, isActive }: NavbarTextProps ) => {
   return (
-    <span className={`${isActive ? 'font-semibold' : 'font-normal'} text-[1.25rem] leading-5 ${color}`}>
+    <span className={`${isActive ? 'font-semibold' : 'font-normal'} text-[1.25rem] 
+    leading-5 ${color} hidden sm:block`}>
       {children}
     </span>
   )

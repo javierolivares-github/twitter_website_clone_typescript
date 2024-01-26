@@ -1,7 +1,7 @@
 import React from 'react';
 import '/src/index.css';
-import HomeHeader from '../../patterns/HomeHeader';
-import Tweets from '../../patterns/tweet/Tweets';
+import HomeHeader from '../../components/patterns/HomeHeader';
+import Tweets from '../../components/patterns/tweet/Tweets';
 
 const Home = () => {
   return (

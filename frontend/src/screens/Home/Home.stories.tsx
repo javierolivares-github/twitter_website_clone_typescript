@@ -1,5 +1,5 @@
 import Home from './Home';
-import { mockServer } from '../../../mock_server/mockServer';
+import { mockServer } from '../../mock_server/mockServer';
 mockServer();
 
 /**The **Home** component renders the main page of our app. */

@@ -1,11 +1,11 @@
 ---
-to: src/components/patterns/<%=name%>/<%=name%>.stories.tsx
+to: src/components/patterns/navbar/<%=name%>/<%=name%>.stories.tsx
 ---
 import <%=name%> from './<%=name%>';
 
 /** The **<%=name%>** component renders... */
 export default {
-  title: 'Patterns/<%=name%>/<%=name%>',
+  title: 'Patterns/navbar/<%=name%>',
   component: <%=name%>,
   tags: ['autodocs'],
   argTypes: {
@@ -16,7 +16,7 @@ export default {
   },
 }
 
-/**This is the default version of <%=name%> component:*/
+/**This is the default version of **<%=name%>** component:*/
 export const Default = {
   args: {},
 }

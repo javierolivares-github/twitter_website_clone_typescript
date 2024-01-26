@@ -1,12 +1,9 @@
----
-to: src/components/atoms/Icons/<%=name%>/<%=name%>.stories.tsx
----
-import <%=name%> from "./<%=name%>";
+import ExploreIcon from "./ExploreIcon";
 
-/**The **<%=name%>** component renders an icon with the shape of... */
+/**The **ExploreIcon** component renders an icon with the shape of a hashtag. */
 export default {
-  title: 'Atoms/Icons/<%=name%>',
-  component: <%=name%>,
+  title: 'Atoms/Icons/ExploreIcon',
+  component: ExploreIcon,
   tags: ['autodocs'],
   argTypes: {
     fillColor: {
@@ -36,7 +33,7 @@ export default {
   }
 }
 
-/** This is the outlined version of the **<%=name%>** component:*/
+/** This is the outlined version of the **ExploreIcon** component:*/
 export const Outlined = {
   args: {
     fillColor: "text-black-900",
@@ -46,7 +43,7 @@ export const Outlined = {
   },
 };
 
-/** This is the filled version of the **<%=name%>** component:*/
+/** This is the filled version of the **ExploreIcon** component:*/
 export const Filled = {
   args: {
     fillColor: "text-black-900",

@@ -1,5 +1,5 @@
 ---
-to: src/components/patterns/navbar/<%=name%>/index.tsx
+to: src/components/patterns/<%=name%>/index.tsx
 ---
 
 export { default } from './<%=name%>';

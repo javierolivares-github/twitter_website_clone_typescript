@@ -1,5 +1,5 @@
 ---
-to: src/components/patterns/<%=name%>/<%=name%>.tsx
+to: src/components/patterns/navbar/<%=name%>/<%=name%>.tsx
 ---
 
 import React from 'react';

@@ -1,19 +1,13 @@
 import NavbarList from './NavbarList';
 
-/** The **NavbarList** component renders... */
+/** The **NavbarList** component renders a list of navbar elements*/
 export default {
-  title: 'Patterns/NavbarList/NavbarList',
+  title: 'Patterns/Navbar/NavbarList',
   component: NavbarList,
   tags: ['autodocs'],
-  argTypes: {
-    arg1: {
-      description: 'Lorem ipsum dolor...',
-      control: 'text'
-    }
-  },
 }
 
-/**This is the default version of NavbarList component:*/
+/**This is the default version of **NavbarList** component:*/
 export const Default = {
   args: {},
 }

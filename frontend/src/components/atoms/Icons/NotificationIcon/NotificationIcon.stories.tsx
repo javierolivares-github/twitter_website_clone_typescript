@@ -1,12 +1,9 @@
----
-to: src/components/atoms/Icons/<%=name%>/<%=name%>.stories.tsx
----
-import <%=name%> from "./<%=name%>";
+import NotificationIcon from "./NotificationIcon";
 
-/**The **<%=name%>** component renders an icon with the shape of... */
+/**The **NotificationIcon** component renders an icon with the shape of a bell. */
 export default {
-  title: 'Atoms/Icons/<%=name%>',
-  component: <%=name%>,
+  title: 'Atoms/Icons/NotificationIcon',
+  component: NotificationIcon,
   tags: ['autodocs'],
   argTypes: {
     fillColor: {
@@ -36,7 +33,7 @@ export default {
   }
 }
 
-/** This is the outlined version of the **<%=name%>** component:*/
+/** This is the outlined version of the **NotificationIcon** component:*/
 export const Outlined = {
   args: {
     fillColor: "text-black-900",
@@ -46,7 +43,7 @@ export const Outlined = {
   },
 };
 
-/** This is the filled version of the **<%=name%>** component:*/
+/** This is the filled version of the **NotificationIcon** component:*/
 export const Filled = {
   args: {
     fillColor: "text-black-900",

@@ -33,8 +33,18 @@ export default {
   }
 }
 
-/** This is the default version of the **ProfileIcon** component:*/
-export const Default = {
+/** This is the outlined version of the **ProfileIcon** component:*/
+export const Outlined = {
+  args: {
+    fillColor: "text-black-900",
+    isFilled: false,
+    width: "w-[1.125rem]",
+    height: "h-[1.125rem]",
+  },
+};
+
+/** This is the filled version of the **ProfileIcon** component:*/
+export const Filled = {
   args: {
     fillColor: "text-black-900",
     isFilled: true,

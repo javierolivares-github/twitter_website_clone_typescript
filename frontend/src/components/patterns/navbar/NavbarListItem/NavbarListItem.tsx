@@ -3,12 +3,12 @@ import '/src/index.css';
 import NavbarTextItem from '../NavbarTextItem';
 
 type NavbarItemProps = {
-  icon: React.JSX.Element;
-  text: string;
+  iconChild: React.JSX.Element;
+  textChild: string;
   isActive: boolean;
 }
 
-const NavbarListItem = ({ icon, text, isActive }: NavbarItemProps) => {
+const NavbarListItem = ({ iconChild, textChild, isActive }: NavbarItemProps) => {
   return (
     <li
       data-testid="navbar-list-item"
@@ -16,9 +16,9 @@ const NavbarListItem = ({ icon, text, isActive }: NavbarItemProps) => {
       ${isActive ? "bg-primary-90 hover:bg-primary-90" : "hover:bg-primary-98"}
       cursor-pointer`}
     >
-      {icon}
+      {iconChild}
       <NavbarTextItem color="text-secondary-15" isActive={isActive}>
-        {text}
+        {textChild}
       </NavbarTextItem>
     </li>
   )

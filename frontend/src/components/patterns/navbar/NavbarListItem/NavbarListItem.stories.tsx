@@ -8,10 +8,10 @@ export default {
   component: NavbarListItem,
   tags: ['autodocs'],
   argTypes: {
-    icon: {
+    iconChild: {
       description: 'Specifies the icon of the component in a React element format.',
     },
-    text: {
+    textChild: {
       description: 'Specifies the text content of the component in a string format.',
       control: 'text',
     },
@@ -25,8 +25,8 @@ export default {
 /**This is the default version of NavbarListItem component:*/
 export const Default = {
   args: {
-    icon: <CircleIcon fillColor="text-secondary-15" width="w-[1.375rem]" height="h-[1.375rem]" />,
-    text: "Home",
+    iconChild: <CircleIcon fillColor="text-secondary-15" width="w-[1.375rem]" height="h-[1.375rem]" />,
+    textChild: "Home",
     isActive: false,
   },
 }
@@ -34,8 +34,8 @@ export const Default = {
 /**This is the active version of NavbarListItem component:*/
 export const Active = {
   args: {
-    icon: <CircleIcon fillColor="text-secondary-15" width="w-[1.375rem]" height="h-[1.375rem]" />,
-    text: "Home",
+    iconChild: <CircleIcon fillColor="text-secondary-15" width="w-[1.375rem]" height="h-[1.375rem]" />,
+    textChild: "Home",
     isActive: true,
   },
 }

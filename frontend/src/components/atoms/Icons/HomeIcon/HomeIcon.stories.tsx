@@ -1,6 +1,6 @@
 import HomeIcon from "./HomeIcon";
 
-/**The **HomeIcon** component renders an icon with the shape of... */
+/**The **HomeIcon** component renders an icon with the shape of a house. */
 export default {
   title: 'Atoms/Icons/HomeIcon',
   component: HomeIcon,
@@ -33,8 +33,18 @@ export default {
   }
 }
 
-/** This is the default version of the **HomeIcon** component:*/
-export const Default = {
+/** This is the outlined version of the **HomeIcon** component:*/
+export const Outlined = {
+  args: {
+    fillColor: "text-black-900",
+    isFilled: false,
+    width: "w-[1.125rem]",
+    height: "h-[1.125rem]",
+  },
+};
+
+/** This is the filled version of the **HomeIcon** component:*/
+export const Filled = {
   args: {
     fillColor: "text-black-900",
     isFilled: true,

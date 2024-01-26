@@ -1,12 +1,9 @@
----
-to: src/components/atoms/Icons/<%=name%>/<%=name%>.stories.tsx
----
-import <%=name%> from "./<%=name%>";
+import MoreIcon from "./MoreIcon";
 
-/**The **<%=name%>** component renders an icon with the shape of... */
+/**The **MoreIcon** component renders an icon with the shape of a circle with three dots inside. */
 export default {
-  title: 'Atoms/Icons/<%=name%>',
-  component: <%=name%>,
+  title: 'Atoms/Icons/MoreIcon',
+  component: MoreIcon,
   tags: ['autodocs'],
   argTypes: {
     fillColor: {
@@ -36,7 +33,7 @@ export default {
   }
 }
 
-/** This is the outlined version of the **<%=name%>** component:*/
+/** This is the outlined version of the **MoreIcon** component:*/
 export const Outlined = {
   args: {
     fillColor: "text-black-900",
@@ -46,7 +43,7 @@ export const Outlined = {
   },
 };
 
-/** This is the filled version of the **<%=name%>** component:*/
+/** This is the filled version of the **MoreIcon** component:*/
 export const Filled = {
   args: {
     fillColor: "text-black-900",

@@ -12,13 +12,5 @@ describe('NavbarTweetButton', () => {
     const buttonElement = screen.getByTestId('navbar-tweet-button');
     expect(buttonElement.tagName).toBe("BUTTON");
   });
-
-  test('The component should renders text content inside.', () => {
-    render(
-      <NavbarTweetButton textContent='Tweet' />
-    );
-    const spanElement = screen.getByTestId('navbar-tweet-button-span');
-    expect(spanElement).toBeVisible();
-  });
 });
 

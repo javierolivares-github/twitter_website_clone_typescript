@@ -10,7 +10,7 @@ const NavbarTweetButton = ({ textContent }: NavbarButton) => {
   return (
     <button
       data-testid="navbar-tweet-button"
-      className={`rounded-full border-none outline-none inline-flex 
+      className={`max-w-[3.375rem] max-h-[3.375rem] xl:max-w-[15rem] rounded-full border-none outline-none inline-flex 
       justify-center items-center p-4 bg-primary-50 hover:bg-secondary-40
       transition duration-100 ease-in-out active:scale-95 cursor-pointer`}
     >

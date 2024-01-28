@@ -5,7 +5,7 @@ import <%=name%> from './<%=name%>';
 
 /** The **<%=name%>** component renders... */
 export default {
-  title: 'Patterns/navbar/<%=name%>',
+  title: 'Patterns/Navbar/<%=name%>',
   component: <%=name%>,
   tags: ['autodocs'],
   argTypes: {

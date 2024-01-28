@@ -1,31 +1,43 @@
 import NavbarProfile from './NavbarProfile';
+import { userProfileInfo } from '../../../../data/userProfileInfo';
 
-/** The **NavbarProfile** component renders a profile image and information about the user like username and account. */
+/** The **NavbarProfile** component shows the information of the users profile in the navegation bar. */
 export default {
-  title: 'Patterns/navbar/NavbarProfile',
+  title: 'Patterns/Navbar/NavbarProfile',
   component: NavbarProfile,
   tags: ['autodocs'],
   argTypes: {
-    profileImageUrl: {
-      description: 'Specifies the URL of the profile image in a string format.',
-      control: 'text'
+    status: {
+      description: 'Defines the status of the component in a string format.',
+      control: 'text',
     },
-    username: {
-      description: 'Specifies the username in a string format.',
-      control: 'text'
-    },
-    account: {
-      description: 'Specifies the account name in a string format.',
-      control: 'text'
+    data: {
+      description: 'Contains the data of the user\'s profile.',
+      control: 'object',
     },
   },
 }
 
-/**This is the default version of **NavbarProfile** component:*/
-export const Default = {
+/**This is the loaded version of **NavbarProfile** component:*/
+export const Loaded = {
   args: {
-    profileImageUrl: "/images/profile1.png",
-    username: "Username",
-    account: "@account",
+    status: "loaded",
+    data: userProfileInfo,
+  },
+}
+
+/**This is the loading version of **NavbarProfile** component:*/
+export const Loading = {
+  args: {
+    status: "loading",
+    data: [],
+  },
+}
+
+/**This is the errored version of **NavbarProfile** component:*/
+export const Errored = {
+  args: {
+    status: "errored",
+    data: [],
   },
 }

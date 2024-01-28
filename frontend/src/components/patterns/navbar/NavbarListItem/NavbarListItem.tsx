@@ -12,7 +12,7 @@ const NavbarListItem = ({ iconChild, textChild, isActive }: NavbarItemProps) => 
   return (
     <li
       data-testid="navbar-list-item"
-      className={`rounded-full inline-flex items-center gap-3 p-3 
+      className={`max-w-[2.875rem] max-h-[2.875rem] xl:max-w-[15rem] rounded-full inline-flex items-center gap-3 p-3 
       ${isActive ? "bg-primary-90 hover:bg-primary-90" : "hover:bg-primary-98"}
       cursor-pointer`}
     >

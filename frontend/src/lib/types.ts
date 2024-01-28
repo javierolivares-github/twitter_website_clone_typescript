@@ -52,5 +52,12 @@ export type tweetCollectionType = {
   commentAmount: string;
   retweetAmount: string;
   likeAmount: string;
-}[]
+}[];
+
+export type UserProfileInfoTypes = {
+  id: number;
+  imageUrl: string;
+  username: string;
+  account: string;
+}[] | [] ;
 

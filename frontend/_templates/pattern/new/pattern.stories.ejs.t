@@ -1,5 +1,5 @@
 ---
-to: src/components/patterns/<%=name%>/<%=name%>.stories.tsx
+to: src/components/patterns/newsSidebar/<%=name%>/<%=name%>.stories.tsx
 ---
 import <%=name%> from './<%=name%>';
 
@@ -16,7 +16,7 @@ export default {
   },
 }
 
-/**This is the default version of <%=name%> component:*/
+/**This is the default version of **<%=name%>** component:*/
 export const Default = {
   args: {},
 }

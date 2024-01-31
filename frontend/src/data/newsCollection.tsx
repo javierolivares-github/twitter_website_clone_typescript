@@ -1,0 +1,58 @@
+import {newsCollectionType} from '../lib/types';
+
+export const newsCollection: newsCollectionType = [
+  {
+    id: 1,
+    imageUrl: '/images/coffee.jpg',
+    username: 'CoffeeMan',
+    content: 'New studies reveal that daily coffee consumption can reduce the risk of heart diseases and promote greater longevity. Good news for coffee lovers!',
+    timestamp: '14m',
+    hashtag: ['#coffee', '#cafe'],
+    trending: false,
+  },
+  {
+    id: 2,
+    imageUrl: '/images/virtualBoy.jpg',
+    username: 'Virtual Boy',
+    content: '🔮✨ Immerse yourself in new worlds and live incredible experiences with virtual reality. The technology that challenges the limits of imagination!',
+    timestamp: '56m',
+    hashtag: ['#Apple360', '#virtualReality'],
+    trending: true,
+  },
+  {
+    id: 3,
+    imageUrl: '/images/pet.jpg',
+    username: 'Jane Doe',
+    content: 'Caring for our pets is more than just feeding them and taking them for a walk. It is about providing them with love, attention, and a home filled with joy!🐶',
+    timestamp: '2h',
+    hashtag: ['#InconditionalLove', '#HappyPets'],
+    trending: false,
+  },
+  {
+    id: 4,
+		imageUrl: '/images/Gatsby.png',
+		username: 'Gatsby',
+		content:'Ready to migrate from Netlify to Gatsby? Build modern and ultra-fast applications and websites with React. Today on the Gatsby Blog, we share a brief and helpful guide.',
+    timestamp: '10h',
+    hashtag: ['#FastCMS'],
+    trending: true,
+	},
+  {
+    id: 5,
+		imageUrl: '/images/FigmaConfig.jpg',
+		username: 'Figma',
+		content:'This year, we are going global with talks from 100 speakers from over 20 countries in 8 languages. And all of this will take place over 24 hours. As always, registration is free. We are looking forward to seeing you there!',
+    timestamp: '17h',
+		hashtag: ['#ConfigEvent'],
+    trending: true,
+	},
+  {
+    id: 6,
+    imageUrl: '/images/joga.jpg',
+    username: 'Jane Doe',
+    content: 'Enjoy the connection with nature while practicing yoga outdoors.🧘‍♀️',
+    timestamp: '7h',
+    hashtag: ['#YogaOutdoors', '#Joga'],
+    trending: false,
+  },
+];

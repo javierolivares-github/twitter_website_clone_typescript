@@ -8,9 +8,9 @@ export type IconProps = {
 }
 
 export type TextProps = {
-  children: string;
+  children: string | string[] | undefined;
   weight: "font-bold" | "font-semibold" | "font-medium" | "font-normal" | "font-light";
-  color: "text-secondary-15" | "text-secondary-50" | "text-gray-100" | "text-gray-40" | "text-red-600";
+  color: "text-secondary-15" | "text-secondary-50" | "text-secondary-40" | "text-gray-100" | "text-gray-40" | "text-red-600" | "text-primary-50";
 }
 
 export type ImageProps = {
@@ -52,7 +52,7 @@ export type tweetCollectionType = {
   commentAmount: string;
   retweetAmount: string;
   likeAmount: string;
-}[];
+}[] | [];
 
 export type UserProfileInfoTypes = {
   id: number;
@@ -61,3 +61,34 @@ export type UserProfileInfoTypes = {
   account: string;
 }[] | [] ;
 
+export type NewsFeedListItemProps = {
+  username: string;
+  timestamp: string;
+  content: string;
+  imageUrl: string;
+  trending: boolean;
+  hashtag: string[] | undefined;
+}
+
+export type newsCollectionType = {
+  id: number;
+  imageUrl: string;
+  username: string;
+  content: string;
+  timestamp: string;
+  hashtag: string[];
+  trending: boolean;
+}[] | [];
+
+export type NewsFeedListProps = {
+  status: string;
+  data: {
+    id: number;
+    imageUrl: string;
+    username: string;
+    content: string;
+    timestamp: string;
+    hashtag: string[];
+    trending: boolean;
+  }[] | [];
+};

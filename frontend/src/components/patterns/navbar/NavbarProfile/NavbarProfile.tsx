@@ -6,6 +6,7 @@ import { statusTypes } from '../../../../lib/statusTypes';
 import NavbarProfileLoading from '../NavbarProfileLoading';
 import ErrorMessage from '../../../atoms/ErrorMessage';
 import NavbarProfileItem from '../NavbarProfileItem/NavbarProfileItem';
+import { handleClick } from '../../../../lib/helpers';
 
 
 type NavbarProfileProps = {
@@ -30,7 +31,8 @@ const NavbarProfile = ({ status, data }: NavbarProfileProps) => {
     <NavbarProfileItem 
       profileImageUrl={data[0].imageUrl} 
       username={data[0].username}
-      account={data[0].account} 
+      account={data[0].account}
+      onClick={handleClick}
     />
   )
 }

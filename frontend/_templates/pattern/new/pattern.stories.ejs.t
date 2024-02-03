@@ -1,5 +1,5 @@
 ---
-to: src/components/patterns/newsSidebar/<%=name%>/<%=name%>.stories.tsx
+to: src/components/patterns/<%=name%>/<%=name%>.stories.tsx
 ---
 import <%=name%> from './<%=name%>';
 

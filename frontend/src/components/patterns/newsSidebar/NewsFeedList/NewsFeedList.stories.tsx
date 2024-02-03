@@ -3,7 +3,7 @@ import { newsCollection } from '../../../../data/newsCollection';
 
 /** The **NewsFeedList** component renders a List of News. */
 export default {
-  title: 'Patterns/NewsFeed/NewsFeedList',
+  title: 'Patterns/NewsSidebar/NewsFeedList',
   component: NewsFeedList,
   tags: ['autodocs'],
   argTypes: {

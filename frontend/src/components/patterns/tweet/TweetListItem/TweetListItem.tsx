@@ -23,7 +23,7 @@ const TweetListItem = ({ status, profileImageUrl, verified, username, account, t
   return (
     <div
       data-testid="tweet-list-item-container"
-      className={`sm:max-w-[40rem] flex flex-col gap-2 p-4 border-l border-b border-r border-solid border-black-100`}
+      className={`w-full max-w-[80rem] flex flex-col gap-2 p-4 border-l border-b border-r border-solid border-black-100`}
     >
       <TweetInfo imageUrl={profileImageUrl} status={status} />
       <TweetUsername verified={verified} username={username} account={account} timestamp={timestamp} />

@@ -1,5 +1,5 @@
 ---
-to: src/components/atoms/Icons/<%=name%>/<%=name%>.tsx
+to: src/components/atoms/<%=name%>/<%=name%>.tsx
 ---
 
 import React from 'react';

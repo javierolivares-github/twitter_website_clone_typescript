@@ -14,7 +14,7 @@ type TweetUsernameProps = {
 
 const TweetUsername = ({ verified, username, account, timestamp }: TweetUsernameProps) => {
   return (
-    <div className={`sm:max-w-[38rem] flex justify-between items-center`}>
+    <div className={`sm:max-w-[80rem] flex justify-between items-center`}>
       <div className={`flex items-center gap-2`}>
         <Heading1 weight="font-bold" color="text-secondary-15">{username}</Heading1>
         {verified && <OfficialIcon fillColor="text-primary-50" width="w-[1.375rem]" height="h-[1.375rem]" smWidth="sm:w-[1.5rem]" smHeight="sm:h-[1.5rem]" />}

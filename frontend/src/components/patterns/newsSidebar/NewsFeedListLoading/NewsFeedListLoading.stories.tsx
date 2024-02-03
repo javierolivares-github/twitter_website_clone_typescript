@@ -1,8 +1,8 @@
 import NewsFeedListLoading from './NewsFeedListLoading';
 
-/** The **NewsFeedListLoading** component renders a list of loading items. */
+/** The **NewsFeedListLoading** component renders a list of items in a loading mode. */
 export default {
-  title: 'Patterns/NewsFeed/NewsFeedListLoading',
+  title: 'Patterns/NewsSidebar/NewsFeedListLoading',
   component: NewsFeedListLoading,
   tags: ['autodocs'],
 }

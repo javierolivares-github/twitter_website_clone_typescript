@@ -2,10 +2,11 @@ import React from 'react';
 import '/src/index.css';
 import IconButton from '../IconButton';
 import EventsIcon from '../../Icons/EventsIcon';
+import { IconButtonStarProps } from '../../../../lib/types';
 
-const IconButtonEvents = () => {
+const IconButtonEvents = ({onClick}: IconButtonStarProps) => {
   return (
-    <IconButton>
+    <IconButton onClick={onClick}>
       <EventsIcon 
         fillColor="text-primary-50"
         width="w-[1rem]"

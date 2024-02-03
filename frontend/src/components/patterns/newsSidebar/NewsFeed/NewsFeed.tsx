@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '/src/index.css';
 import { statusTypes } from '../../../../lib/statusTypes';
 import NewsFeedList from '../NewsFeedList';
+import Heading1 from '../../../atoms/Typography/Heading1';
 
 const NewsFeed = () => {
   const [newsState, setNewsState] = useState<NewsType>({
@@ -33,11 +34,17 @@ const NewsFeed = () => {
   }, []);
 
   return (
-    <NewsFeedList
-      status={newsState.status}
-      data={newsState.data}
-    />
-  )
+    <div
+      data-testid="newsfeed-container"
+      className={`flex flex-col gap-4 p-4 max-w-[25rem]`}
+    >
+      <Heading1 weight='font-bold' color='text-secondary-15'>News Feed</Heading1>
+      <NewsFeedList
+        status={newsState.status}
+        data={newsState.data}
+      />
+    </div>
+  );
 }
 
 export default NewsFeed;

@@ -6,7 +6,7 @@ const TweetListLoading = () => {
   let items = [1, 2, 3, 4, 5, 6];
 
   return (
-    <div className={`flex flex-col`}>
+    <div className={`w-full max-w-[80rem] flex flex-col flex-grow`}>
       {items.map( (item, index) => (
         <TweetListItemLoading key={index} color="bg-color-pulse-animation" />
       ))}

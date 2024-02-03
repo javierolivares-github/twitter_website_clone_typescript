@@ -16,7 +16,7 @@ const TweetAnalytics = ({ commentAmount, retweetAmount, likeAmount }: TweetAnaly
   return (
     <div 
       data-testid="tweet-analytics-container"
-      className={`flex gap-4`}
+      className={`max-w-[80rem] flex gap-4`}
     >
       {/* col-1 */}
       <div className={`flex items-center gap-1`}>

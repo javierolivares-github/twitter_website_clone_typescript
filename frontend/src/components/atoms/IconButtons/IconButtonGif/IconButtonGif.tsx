@@ -2,10 +2,11 @@ import React from 'react';
 import '/src/index.css';
 import IconButton from '../IconButton';
 import GifIcon from '../../Icons/GifIcon';
+import { IconButtonStarProps } from '../../../../lib/types';
 
-const IconButtonGif = () => {
+const IconButtonGif = ({onClick}: IconButtonStarProps) => {
   return (
-    <IconButton>
+    <IconButton onClick={onClick}>
       <GifIcon 
         fillColor="text-primary-50"
         width="w-[1rem]"

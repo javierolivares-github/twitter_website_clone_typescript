@@ -7,14 +7,16 @@ type NavbarProfileItemProps = {
   profileImageUrl: string;
   username: string;
   account: string;
+  onClick: () => void;
 }
 
-const NavbarProfileItem = ({ profileImageUrl, username, account }: NavbarProfileItemProps) => {
+const NavbarProfileItem = ({ profileImageUrl, username, account, onClick }: NavbarProfileItemProps) => {
   return (
     <div
       data-testid="navbar-profile"
       className={`max-w-[2.5rem] xl:max-w-[15rem] rounded-full flex items-center justify-between xl:p-4 hover:bg-primary-98
       cursor-pointer`}
+      onClick={onClick}
     >
       {/* Container */}
       <div className='flex items-center gap-4'>

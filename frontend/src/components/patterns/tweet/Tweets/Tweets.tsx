@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '/src/index.css';
 import { statusTypes } from '../../../../lib/statusTypes';
 import TweetList from '../TweetList';
+import { mockServer } from '../../../../mock_server/mockServer';
+mockServer();
 
 const Tweets = () => {
   const [tweetState, setTweetState]= useState<TweetType>({

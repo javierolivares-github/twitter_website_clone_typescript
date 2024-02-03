@@ -17,7 +17,7 @@ type TweetInfoProps = {
 const TweetInfo = ({ status, imageUrl }: TweetInfoProps) => {
   if (status === tweetStatusTypes.liked) {
     return (
-      <div className={`flex items-center gap-4`}>
+      <div className={`max-w-[80rem] flex items-center gap-4`}>
         <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <LikeIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
@@ -29,7 +29,7 @@ const TweetInfo = ({ status, imageUrl }: TweetInfoProps) => {
 
   if (status === tweetStatusTypes.retweeted) {
     return (
-      <div className={`flex items-center gap-4`}>
+      <div className={`max-w-[80rem] flex items-center gap-4`}>
         <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <RetweetIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
@@ -41,7 +41,7 @@ const TweetInfo = ({ status, imageUrl }: TweetInfoProps) => {
 
   if (status === tweetStatusTypes.followed) {
     return (
-      <div className={`flex items-center gap-4`}>
+      <div className={`max-w-[80rem] flex items-center gap-4`}>
         <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <ProfileIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
@@ -53,7 +53,7 @@ const TweetInfo = ({ status, imageUrl }: TweetInfoProps) => {
 
   if (status === tweetStatusTypes.promoted) {
     return (
-      <div className={`flex items-center gap-4`}>
+      <div className={`max-w-[80rem] flex items-center gap-4`}>
         <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <AdsIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />
@@ -65,7 +65,7 @@ const TweetInfo = ({ status, imageUrl }: TweetInfoProps) => {
 
   if (status === tweetStatusTypes.pinned) {
     return (
-      <div className={`flex items-center gap-4`}>
+      <div className={`max-w-[80rem] flex items-center gap-4`}>
         <ProfileImage imageUrl={imageUrl} width='w-11' height='h-11' smWidth='sm:w-12' smHeight='sm:h-12' />
         <div className={`flex items-center gap-2`}>
           <PinIcon fillColor='text-gray-40' isFilled={true} width='w-[1.375rem]' height='h-[1.375rem]' smWidth='sm:w-[1.5rem]' smHeight='sm:h-[1.5rem]' />

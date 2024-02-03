@@ -1,5 +1,5 @@
 ---
-to: src/components/patterns/newsSidebar/<%=name%>/index.tsx
+to: src/components/patterns/<%=name%>/index.tsx
 ---
 
 export { default } from './<%=name%>';

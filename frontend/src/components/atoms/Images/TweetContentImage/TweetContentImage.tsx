@@ -4,7 +4,7 @@ import { ImageProps } from '../../../../lib/types';
 
 const TweetContentImage = ({ imageUrl }: ImageProps) => {
   return (
-    <div className={`h-[12.5rem] sm:h-[15rem] sm:max-w-[40rem] rounded-2xl overflow-hidden`}>
+    <div className={`h-[12.5rem] sm:h-[15rem] max-w-[80rem] rounded-2xl overflow-hidden`}>
       <img
         data-testid="tweet-content-container"
         src={imageUrl} 

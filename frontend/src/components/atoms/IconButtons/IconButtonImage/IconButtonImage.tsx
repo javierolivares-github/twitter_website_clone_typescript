@@ -2,10 +2,11 @@ import React from 'react';
 import '/src/index.css';
 import IconButton from '../IconButton';
 import ImagesIcon from '../../Icons/ImagesIcon';
+import { IconButtonStarProps } from '../../../../lib/types';
 
-const IconButtonImage = () => {
+const IconButtonImage = ({onClick}: IconButtonStarProps) => {
   return (
-    <IconButton>
+    <IconButton onClick={onClick}>
       <ImagesIcon 
         fillColor="text-primary-50"
         width="w-[1rem]"

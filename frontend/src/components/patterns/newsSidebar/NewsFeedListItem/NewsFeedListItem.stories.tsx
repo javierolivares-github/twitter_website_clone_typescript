@@ -2,7 +2,7 @@ import NewsFeedListItem from './NewsFeedListItem';
 
 /** The **NewsFeedListItem** component renders an item of the NewsFeed Section. */
 export default {
-  title: 'Patterns/NewsFeed/NewsFeedListItem',
+  title: 'Patterns/NewsSidebar/NewsFeedListItem',
   component: NewsFeedListItem,
   tags: ['autodocs'],
   argTypes: {
@@ -28,7 +28,7 @@ export default {
     },
     hashtag: {
       description: 'Defines the hastags in a string-array format.',
-      control: 'string',
+      control: 'object',
     },
   },
 }
@@ -36,11 +36,12 @@ export default {
 /**This is the default version of NewsFeedListItem component:*/
 export const Default = {
   args: {
+    id: 1,
     username: "First name",
     timestamp: "5h ago",
     content: "Placeholder content goes here!",
     imageUrl: "/images/coffee.jpg",
     trending: true,
-    hashtag: "#hashtag",
+    hashtag: ["#hashtag1", "#hashtag2"],
   },
 }

@@ -2,10 +2,11 @@ import React from 'react';
 import '/src/index.css';
 import IconButton from '../IconButton';
 import DotsIcon from '../../Icons/DotsIcon';
+import { handleClick } from '../../../../lib/helpers';
 
 const IconButtonMenu = () => {
   return (
-    <IconButton>
+    <IconButton onClick={handleClick}>
       <DotsIcon 
         fillColor="text-black-900"
         width="w-[1rem]"

@@ -10,7 +10,7 @@ const TweetListItemLoading = ({ color }: LoadingProps) => {
   return (
     <div
       data-testid="tweetlistitem-loading-container"
-      className={`sm:max-w-[40rem] flex flex-col gap-2 p-4 bg-gray-100 border-l 
+      className={`w-full max-w-[80rem] flex flex-col gap-2 p-4 bg-gray-100 border-l 
       border-b border-r border-solid border-black-100`}
     >
       {/* Tweet info */}
@@ -24,9 +24,9 @@ const TweetListItemLoading = ({ color }: LoadingProps) => {
       </div>
 
       {/* Tweet content */}
-      <div className="flex flex-col gap-4">
-        <div className={`w-[20rem] h-[0.75rem] sm:h-[0.875rem] ${color} rounded-2xl`}></div>
-        <div className={`h-[12.5rem] sm:h-[15rem] ${color} rounded-2xl`}></div>
+      <div className="flex flex-col gap-4 w-full">
+        <div className={`w-full max-w-[40rem] h-[0.75rem] sm:h-[0.875rem] ${color} rounded-2xl`}></div>
+        <div className={`w-full h-[12.5rem] sm:h-[15rem] ${color} rounded-2xl`}></div>
       </div>
 
       {/* Tweet analytics */}

@@ -2,10 +2,11 @@ import React from 'react';
 import '/src/index.css';
 import IconButton from '../IconButton';
 import AnalyticsIcon from '../../Icons/AnalyticsIcon';
+import { IconButtonStarProps } from '../../../../lib/types';
 
-const IconButtonAnalytics = () => {
+const IconButtonAnalytics = ({onClick}: IconButtonStarProps) => {
   return (
-    <IconButton>
+    <IconButton onClick={onClick}>
       <AnalyticsIcon 
         fillColor="text-primary-50"
         width="w-[1rem]"

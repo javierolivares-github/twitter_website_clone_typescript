@@ -14,6 +14,10 @@ export default {
       description: 'Specifies the content of the button.',
       control: 'text',
     },
+    onClick: {
+      description: 'Defines a function that is activated when the user press the button.',
+      action: 'Button pressed.'
+    },
   }
 }
 

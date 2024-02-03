@@ -2,10 +2,11 @@ import React from 'react';
 import '/src/index.css';
 import IconButton from '../IconButton';
 import LocationIcon from '../../Icons/LocationIcon';
+import { IconButtonStarProps } from '../../../../lib/types';
 
-const IconButtonLocation = () => {
+const IconButtonLocation = ({onClick}: IconButtonStarProps) => {
   return (
-    <IconButton>
+    <IconButton onClick={onClick}>
       <LocationIcon 
         fillColor="text-primary-50"
         width="w-[1rem]"

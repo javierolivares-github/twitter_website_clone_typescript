@@ -11,18 +11,19 @@ import IconButtonEmoji from '../../atoms/IconButtons/IconButtonEmoji';
 import IconButtonEvents from '../../atoms/IconButtons/IconButtonEvents';
 import IconButtonLocation from '../../atoms/IconButtons/IconButtonLocation';
 import TweetButton from '../../atoms/Buttons/TweetButton';
+import { handleClick } from '../../../lib/helpers';
 
 const HomeHeader = () => {
   return (
     <div
       data-testid="home-header-container"
-      className={`w-full sm:max-w-[40rem] flex flex-col gap-4 p-4 bg-gray-100 border-l border-b border-r border-solid 
+      className={`w-full max-w-[80rem] flex flex-col gap-4 p-4 bg-gray-100 border-l border-b border-r border-solid 
       border-black-100`}
     >
       {/* Row1 */}
       <div className={`flex justify-between items-center`}>
         <Heading1 weight="font-bold" color="text-secondary-15">Home</Heading1>
-        <IconButtonStar />  
+        <IconButtonStar onClick={handleClick} />  
       </div>
       {/* Row2 */}
       <div className={`flex items-center gap-4`}>
@@ -32,14 +33,14 @@ const HomeHeader = () => {
       {/* Row3 */}
       <div className={`flex justify-between items-center`}>
         <div className={`flex gap-2`}>
-          <IconButtonImage />
-          <IconButtonGif />
-          <IconButtonAnalytics />
-          <IconButtonEmoji />
-          <IconButtonEvents />
-          <IconButtonLocation />
+          <IconButtonImage onClick={handleClick}/>
+          <IconButtonGif onClick={handleClick}/>
+          <IconButtonAnalytics onClick={handleClick}/>
+          <IconButtonEmoji onClick={handleClick}/>
+          <IconButtonEvents onClick={handleClick}/>
+          <IconButtonLocation onClick={handleClick}/>
         </div>
-        <TweetButton size='small'>Tweet</TweetButton>
+        <TweetButton size="small" onClick={handleClick}>Tweet</TweetButton>
       </div>
     </div>
   )

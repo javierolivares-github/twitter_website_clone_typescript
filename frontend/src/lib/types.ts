@@ -21,6 +21,16 @@ export type ImageProps = {
   smHeight?: string;
 }
 
+export type IconButtonProps = {
+  children: React.JSX.Element;
+  onClick: () => void;
+}
+
+export type IconButtonStarProps = {
+  onClick: () => void;
+}
+
+
 export type TweetListProps = {
   status: string;
   data: {
@@ -61,15 +71,6 @@ export type UserProfileInfoTypes = {
   account: string;
 }[] | [] ;
 
-export type NewsFeedListItemProps = {
-  username: string;
-  timestamp: string;
-  content: string;
-  imageUrl: string;
-  trending: boolean;
-  hashtag: string[] | undefined;
-}
-
 export type newsCollectionType = {
   id: number;
   imageUrl: string;
@@ -80,15 +81,38 @@ export type newsCollectionType = {
   trending: boolean;
 }[] | [];
 
+export type NewsFeedListItemProps = {
+  id: number;
+  username: string;
+  timestamp: string;
+  content: string;
+  imageUrl: string;
+  trending: boolean;
+  hashtag: string[] | [] | undefined;
+}
+
 export type NewsFeedListProps = {
   status: string;
-  data: {
-    id: number;
-    imageUrl: string;
-    username: string;
-    content: string;
-    timestamp: string;
-    hashtag: string[];
-    trending: boolean;
-  }[] | [];
+  data: NewsFeedListItemProps[] | [];
 };
+
+export type WhoToFollowListItemProps = {
+  id: number;
+  imageUrl: string;
+  username: string;
+  account: string;
+  isVerified: boolean;
+};
+
+export type WhoToFollowListProps = {
+  status: string;
+  data: WhoToFollowListItemProps[] | [];
+}
+
+export type UserCollectionTypes = {
+  id: number;
+  imageUrl: string;
+  username: string;
+  account: string;
+  isVerified: boolean;
+}[] | [];

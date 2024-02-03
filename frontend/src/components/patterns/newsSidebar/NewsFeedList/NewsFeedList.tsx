@@ -28,6 +28,7 @@ const NewsFeedList = ({ status, data }: NewsFeedListProps) => {
       {data.map((news) => (
         <NewsFeedListItem 
           key={news.id}
+          id={news.id}
           username={news.username}
           timestamp={news.timestamp}
           content={news.content}

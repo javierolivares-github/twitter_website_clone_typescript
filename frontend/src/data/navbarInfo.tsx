@@ -11,36 +11,43 @@ export const navbarInfo = [
   { 
     id: 1, 
     name: "Home", 
-    element: <HomeIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <HomeIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/",
   },
   { 
     id: 2, 
     name: "Explore", 
-    element: <ExploreIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <ExploreIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/explore", 
   },
   { 
     id: 3, 
     name: "Notification", 
-    element: <NotificationIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <NotificationIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/notification", 
   },
   { 
     id: 4, 
     name: "Bookmarks", 
-    element: <BookmarksIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <BookmarksIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/bookmarks", 
   },
   { 
     id: 5, 
     name: "Lists", 
-    element: <ListsIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <ListsIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/lists", 
   },
   { 
     id: 6, 
     name: "Profile", 
-    element: <ProfileIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <ProfileIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/profile", 
   },
   { 
     id: 7, 
     name: "More", 
-    element: <MoreIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" /> 
+    element: <MoreIcon fillColor="text-secondary-15" isFilled={false} width="w-[22px]" height="h-[22px]" />,
+    path: "/", 
   },
 ]

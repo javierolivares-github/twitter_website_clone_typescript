@@ -15,6 +15,7 @@ const NavbarList = () => {
           iconChild={item.element}
           textChild={item.name}
           isActive={false}
+          path={item.path}
         />
       ))}
     </div>

@@ -31,9 +31,9 @@ export const userCollection: UserCollectionTypes = [
   },
   {
     id: 5,
-    imageUrl: '/images/profile3.png',
-    username: 'Pancho Olivares',
-    account: '@pancho-git',
+    imageUrl: '/images/profile4.png',
+    username: 'Tim Berners-Lee',
+    account: '@timbernerslee',
     isVerified: false,
   },
 ];

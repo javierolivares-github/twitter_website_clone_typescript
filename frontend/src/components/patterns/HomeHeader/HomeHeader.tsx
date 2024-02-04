@@ -27,7 +27,7 @@ const HomeHeader = () => {
       </div>
       {/* Row2 */}
       <div className={`flex items-center gap-4`}>
-        <ProfileImage imageUrl="/images/profile1.png" width="w-11" height="h-11" smWidth="sm:w-12" smHeight="sm:h-12" />
+        <ProfileImage imageUrl="/images/profile3.png" width="w-11" height="h-11" smWidth="sm:w-12" smHeight="sm:h-12" />
         <HomeHeaderInput />
       </div>
       {/* Row3 */}
